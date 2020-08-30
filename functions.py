@@ -130,7 +130,7 @@ def train(model, train_loader, loss_func, optimizer, epoch_count=10,
 
             # scheduler step
             if scheduler is not None and mode == 'V':
-                scheduler.step(epoch_metric)
+                scheduler.step()
 
     return history_info, best_model_param
 
